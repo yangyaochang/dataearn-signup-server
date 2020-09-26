@@ -13,6 +13,10 @@ Contains key-value pairs of data submitted in the request body.
 By default, it is undefined, and is populated when you use body-parsing middleware such as express.json() or express.urlencoded().
 */
 
+app.get('/', (req, res) => {
+    res.send('Hi')
+})
+
 app.post('/', (req, res) => {
     const {email, name} = req.body
 
