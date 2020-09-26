@@ -5,7 +5,7 @@ let port = process.env.PORT || 8000
 
 const app = express()
 
-app.use(cors())
+app.use(cors({ origin: true }))
 app.use(express.json())
 /* 
 req.body 
